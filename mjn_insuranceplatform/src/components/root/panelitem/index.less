@@ -1,0 +1,86 @@
+@import '../../../less/core.less';
+
+.panel_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 82/@s;
+    padding: 0/@s @size_padding;
+    font-size: 28/@s;
+    color: @font_default_color;
+    box-sizing: border-box;
+    border-bottom: 2/@s solid @border_default_color;
+
+    &_left {
+        margin-left: 50/@s;
+        position: relative;
+
+        &_icon {
+            position: absolute;
+            left: -48/@s;
+            top: 8/@s;
+            width: 28/@s;
+            height: 28/@s;
+            background-size: cover !important;
+
+            &_alipay {
+                background: url('../../../assets/images/authImg_alipay.png') center center;
+            }
+
+            &_mobile {
+                background: url('../../../assets/images/authImg_mobile.png') center center;
+            }
+            
+            &_chsi {
+                background: url('../../../assets/images/authImg_chsi.png') center center;
+            }
+
+            &_fund {
+                background: url('../../../assets/images/authImg_fund.png') center center;
+            }
+
+            &_ibank {
+                background: url('../../../assets/images/authImg_ibank.png') center center;
+            }
+
+            &_insure {
+                background: url('../../../assets/images/authImg_insure.png') center center;
+            }
+
+            &_jd {
+                background: url('../../../assets/images/authImg_jd.png') center center;
+            }
+
+            &_lianxiren {
+                background: url('../../../assets/images/authImg_lianxiren.png') center center;
+            }
+
+            &_userinfo {
+                background: url('../../../assets/images/authImg_userinfo.png') center center;
+            }
+
+            &_zm {
+                background: url('../../../assets/images/authImg_zm.png') center center;
+            }
+        }
+    }
+
+    &_right {
+        margin-right: 50/@s;
+        position: relative;
+        color: #999999;
+        font-size: 24/@s;
+
+        .fa-angle-right {
+            font-size: 45/@s;
+            position: absolute;
+            right: -46/@s;
+            top: -7/@s;
+        }
+
+        .active {
+            color: @font_default_color;
+        }
+    }
+}

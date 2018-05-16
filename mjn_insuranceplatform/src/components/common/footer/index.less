@@ -1,0 +1,73 @@
+@import '../../../less/core';
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    bottom: 0/@s;
+    letter-spacing: 0/@s;
+    height: 100/@s;
+    width: 100%;
+    font-size: 34/@s;
+    border-top: 1/@s solid @back_default_color;
+    z-index: 99;
+    &_panel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55%;
+        height: 100%;
+        font-size: 28/@s;
+        background: #fff;
+
+        &_info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-right: 20/@s;
+            font-size: 34/@s;
+            color: @font_default_color;
+
+            &_tem {
+                color: @font_default_color;
+                font-size: 24/@s;
+            }
+
+            &_num {
+                color: @font_active_color;
+                font-size: 32/@s;
+            }
+        }
+
+        &_icon {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+            font-size: 50/@s;
+        }
+    }
+
+    &_submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        height: 100%;
+        color: #fff;
+        background: @back_active_color;
+
+        .footer_submit_href {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+        }
+    }
+
+    
+}

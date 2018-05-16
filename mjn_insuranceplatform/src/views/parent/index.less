@@ -1,0 +1,189 @@
+@import '../../less/core.less';
+
+.adult {
+}
+
+.adult_paging {
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    
+}
+// .ivu-table th {
+//     background-color: #caaaec !important;
+//     color: #ffffff !important;
+// }
+// .ivu-page-item-active {
+//     background-color: #caaaec !important;
+//     border-color: #caaaec !important;
+// }
+.search{
+    width: 1200px;
+    height: auto;
+    background: #fff;
+    position: relative;
+    .icon{
+        position: absolute;
+        width: 90px;
+        height: 60px;
+        right: 0;
+        text-align: center;
+        line-height: 60px;
+        font-size: 14px;
+        .zhan{
+            margin-right: 4px;
+            cursor: pointer;
+        }
+    }
+    .row{
+        width: 1200px;
+        height: 58px;
+        display: flex;
+        color: #393939;
+        flex-direction: row;
+        .row-title{
+            width: 160px;
+            height: 58px;
+            font-size: 14px;
+            line-height: 58px;
+            text-align: center;
+        }
+        .row-content{
+            width: 160px;
+            height: 58px;  
+            font-size: 14px;
+            line-height: 58px;
+            text-align: center;
+			label {
+				display: inline-block;
+				width: 160px;
+				position: relative;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				cursor: pointer;
+				text-align: center;
+				line-height: 34px;
+                font-size: 15px;
+                color: #393939;
+			}
+			
+			input[type=radio] {
+                visibility: hidden;
+                display: none;
+			}			
+			input[type=radio]:checked+label {
+				color: #caaaec;
+				cursor: pointer;
+				border: none;
+			}         
+        }
+        .more{
+            cursor: pointer;
+        }
+        .row-main{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            span{
+                display: inline-block;
+                width: 80px;
+                text-align: center;
+                line-height: 58px;
+            }
+            .btn{
+                width: 100px;
+                height: 30px;
+                margin-top: 14px;
+                text-align: center;
+                color: #ffffff;
+                line-height: 30px;
+                background: #caaaec;
+                border-radius: 8px;
+                margin-left: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.compared{
+    width: 1200px;
+    height: 100px;
+    background: #ffffff;
+    margin-top: 40px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    .font{
+        width: 150px;
+        height: 80px;
+        text-align: center;
+        line-height: 60px;
+    }
+    .content{
+        width: 150px;
+        height: 60px;
+        background: pink;
+        margin-right: 30px;
+        display: flex;
+        flex-direction: row;
+        .name{
+            width: 130px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .close{
+            flex: 1;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            cursor: pointer;
+        }
+    }
+    .btn{
+        width: 100px;
+        height: 30px;
+        margin-top: 14px;
+        text-align: center;
+        color: #ffffff;
+        line-height: 30px;
+        background: #caaaec;
+        border-radius: 8px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+}
+.comparison{
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    div{
+        flex: 1;
+        text-align: center;
+        line-height: 60px;
+        .font{
+            cursor: pointer;
+        }
+    }
+}
+
+.donghua-enter-active,.donghua-leave-active{
+    transition: 1.5s all ease;
+}
+.donghua-enter-active{
+    opacity: 1;
+}
+.donghua-leave-active{
+    opacity: 0;
+}
+.donghua-enter,.donghua-leave{
+    opacity: 0;
+    transition: 0.5s all ease;
+}
